@@ -1,3 +1,5 @@
+--для коммита
+
 from airflow import DAG
 from airflow.providers.http.operators.http import SimpleHttpOperator
 from airflow.hooks.base import BaseHook
@@ -53,4 +55,3 @@ def load_file_to_pg(filename,pg_table,conn_args):
  
     cur.close()
     pg_conn.close()
-
